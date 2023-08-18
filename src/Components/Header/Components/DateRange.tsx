@@ -1,9 +1,9 @@
+import { useData } from '../../../Context/DataContext';
 import DateInput from './DateInput';
-import { useState } from 'react';
 
 const DateRange = () => {
-  const [inicio, setInicio] = useState('');
-  const [final, setFinal] = useState('');
+  const { final, setFinal, inicio, setInicio } = useData();
+
   return (
     <form
       className="flex gap-5 p-5 rounded-[1.25rem] bg-color-5"
