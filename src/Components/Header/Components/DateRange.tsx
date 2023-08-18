@@ -5,7 +5,10 @@ const DateRange = () => {
   const [inicio, setInicio] = useState('');
   const [final, setFinal] = useState('');
   return (
-    <form onSubmit={(e) => e.preventDefault()}>
+    <form
+      className="flex gap-5 p-5 rounded-[1.25rem] bg-color-5"
+      onSubmit={(e) => e.preventDefault()}
+    >
       <DateInput
         label="Início"
         value={inicio}

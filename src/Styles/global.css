@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+  color: #66593c;
+  background-color: #f7f8f5;
+  margin: 0;
+}
+
+button {
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
