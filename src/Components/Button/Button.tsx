@@ -1,6 +1,6 @@
 import React from 'react';
-import { monthName } from '../../utils/monthName';
 import { useData } from '../../Context/DataContext';
+import { monthName } from '../../utils/monthName';
 import { setMonth } from '../../utils/setMonth';
 import { formateDate } from '../../utils/formatDate';
 
@@ -14,7 +14,7 @@ const Button = ({ n, ...rest }: ButtonProps) => {
 
   return (
     <button
-      className="py-2.5 px-5 bg-color-3 rounded-[1.25rem] border-none text-my-color-2 font-semibold capitalize"
+      className="flex-1 py-2.5 px-5 bg-color-3 rounded-[1.25rem] border-none text-my-color-2 font-semibold capitalize"
       onClick={() => {
         setInicio(formateDate(firstDay));
         setFinal(formateDate(lastDay));
