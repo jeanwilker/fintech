@@ -1,10 +1,14 @@
+import Months from '../Months/Months';
 import DateRange from './Components/DateRange';
 
 const Header = () => {
   return (
-    <div>
-      <DateRange />
-    </div>
+    <header className="mb-5">
+      <div className="mb-5">
+        <DateRange />
+      </div>
+      <Months />
+    </header>
   );
 };
 
