@@ -1,16 +1,8 @@
 import { PropsWithChildren, createContext, useContext, useState } from 'react';
 import useFetch from '../hooks/useFetch';
 import { getDate } from '../utils/getDate';
+import { IVenda } from '../types/types';
 
-type IVenda = {
-  id: string;
-  nome: string;
-  preco: number;
-  status: 'pago' | 'processando' | 'falha';
-  pagamento: 'cartao' | 'boleto' | 'pix';
-  parcelas: number | null;
-  data: string;
-};
 
 type IDataContext = {
   data: IVenda[] | null;
