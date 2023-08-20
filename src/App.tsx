@@ -8,7 +8,7 @@ import './Styles/global.css';
 function App() {
   return (
     <DataContextProvider>
-      <div className="grid p-5 gap-5">
+      <div className="grid gap-5 grid-cols-[240px_auto] p-5">
         <Sidenav />
         <main>
           <Header />
