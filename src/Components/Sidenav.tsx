@@ -5,6 +5,7 @@ import configuracoes from '../assets/icons/configuracoes.svg';
 import contato from '../assets/icons/contato.svg';
 import sair from '../assets/icons/sair.svg';
 import FintechSVG from '../assets/FintechSVG';
+import { NavLink } from 'react-router-dom';
 
 const Sidenav = () => {
   return (
@@ -15,24 +16,24 @@ const Sidenav = () => {
           <span className="w-8 h-8 bg-color-4  flex items-center justify-center rounded-[1.25rem] hover:bg-color-3">
             <img src={resumo} />
           </span>
-          <a
-            href=""
+          <NavLink
+            to="/"
             className="flex-1 text-lg text-my-color-1 mx-0 my-1 px-0 py-2.5"
           >
             Resumo
-          </a>
+          </NavLink>
         </li>
 
         <li className="flex items-center gap-5">
           <span className="w-8 h-8 bg-color-4  flex items-center justify-center rounded-[1.25rem] hover:bg-color-3">
             <img src={vendas} />
           </span>
-          <a
-            href=""
+          <NavLink
+            to="/vendas"
             className="flex-1 text-lg text-my-color-1 mx-0 my-1 px-0 py-2.5"
           >
             Vendas
-          </a>
+          </NavLink>
         </li>
 
         <li className="flex items-center gap-5">
