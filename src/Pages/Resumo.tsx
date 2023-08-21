@@ -1,3 +1,4 @@
+import GraphSales from '../Components/GraphSales/GraphSales';
 import { useData } from '../Context/DataContext';
 
 const Resumo = () => {
@@ -37,7 +38,9 @@ const Resumo = () => {
           </span>
         </div>
       </div>
-      <div className="flex-1 p-5 rounded-[1.25rem] bg-color-5 mb-5">Gráficos</div>
+      <div className="flex-1 p-5 rounded-[1.25rem] bg-color-5 mb-5">
+        <GraphSales data={data} />
+      </div>
     </section>
   );
 };
